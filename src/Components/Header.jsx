@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addTodo } from '../store/slices/kanbanSlice';
 
 const Header = () => {
+    const dispatch = useDispatch();
     const [value, setValue] = useState('');
     const handleChange = (e) => {
         setValue(e.target.value);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = () => {
+        value && dispatch(addTodo(value))
         value && setValue('')
     }
 

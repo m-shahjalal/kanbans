@@ -1,11 +1,13 @@
-import Kanban from "./Components/Kanban";
-import Header from "./Components/Header";
+import Kanban from './Components/Kanban';
+import Header from './Components/Header';
 
 function App() {
-    return <div className="container">
-        <Header />
-        <Kanban />
-    </div>;
+    return (
+        <div className="container">
+            <Header />
+            <Kanban />
+        </div>
+    );
 }
 
 export default App;

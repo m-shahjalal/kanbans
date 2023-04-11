@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Task = () => {
+const Task = ({item}) => {
   return (
-    <div className='task' draggable>Task</div>
+    <div className='task' draggable>{item}</div>
   )
 }
 

@@ -3,9 +3,9 @@ import Column from './Column';
 
 const Kanban = () => {
     return <div className="kanban">
-        <Column />
-        <Column />
-        <Column />
+        <Column title='TODO' />
+        <Column title='PROGRESS' />
+        <Column title='DONE' />
         
     </div>;
 };
