@@ -10,9 +10,9 @@ const Header = () => {
     };
 
     const handleSubmit = () => {
-        value && dispatch(addTodo(value))
-        value && setValue('')
-    }
+        value && dispatch(addTodo({ name: value, id: Date.now().toString(36) }));
+        value && setValue('');
+    };
 
     return (
         <div className="header">
@@ -23,7 +23,9 @@ const Header = () => {
                 type="text"
                 placeholder="write your task"
             />
-            <button onClick={handleSubmit} className="header-button">Add</button>
+            <button onClick={handleSubmit} className="header-button">
+                Add
+            </button>
         </div>
     );
 };

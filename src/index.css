@@ -52,10 +52,11 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 20px 0;
+  width: 100%;
 }
 
 .column {
-  width: 300px;
+  width: 250px;
   min-height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -78,4 +79,8 @@ body {
   padding: 10px;
   margin-bottom: 10px;
   cursor: grab;
+}
+
+.dragover {
+  border: 2px dashed #08b969;
 }
